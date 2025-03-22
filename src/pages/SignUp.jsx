@@ -124,7 +124,7 @@ import Cookies from "js-cookie";
 import img1 from "../assets/images/google.png";
 import img2 from "../assets/images/facebook.png";
 import { sendVerificationOtp } from "../utils/authApi";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -222,9 +222,9 @@ const SignUp = () => {
 
                     <p className="text-center mt-3 mb-3 text-white">
                       By registering you agree with our{" "}
-                      <a href="#" className="text-primary">
+                      <Link to="/signin" className="text-primary">
                         Login
-                      </a>
+                      </Link>
                     </p>
 
                     <p className="text-center mb-3 text-white">
